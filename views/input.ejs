@@ -1,0 +1,8 @@
+<div class="field">
+    <label class="label"><%= objet.label  %></label>
+    <% if ( objet.label === "Mobile") { %>
+    <input type=<%= objet.type %> class="input" placeholder="Type your <%= objet.id %>'s number here .." id=<%= objet.label.toLowerCase() %> >
+    <%} else { %>
+    <input type=<%= objet.type %> class="input" placeholder="Type your <%= objet.id %> here .." id=<%= objet.id  %> >
+    <% } %>
+</div>

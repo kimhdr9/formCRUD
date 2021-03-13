@@ -1,0 +1,51 @@
+<script>
+    // les boutons
+    const btn_submit = document.querySelector('#database');
+    const btn_reset = document.querySelector('#reset');
+    // les inputs
+    const input_name = document.querySelector("#name");
+    const input_email = document.querySelector("#email");
+    const input_mobile = document.querySelector("#mobile");
+    const input_city = document.querySelector("#city");
+
+    // test si les informations sont non vides...
+    function Valide(objet)
+    {
+        if ( objet.value.length == 0)
+        {
+            objet.className="input is-danger";
+        }
+        else
+        {
+            objet.className="input is-primary";
+        }
+    }
+    // mise à zéro des inputs
+    function MiseAZero(objet)
+    {
+        objet.className="input";
+        objet.value="";
+    }
+//
+// traitement des évènements sur les boutons
+//
+    btn_submit.addEventListener("click",()=>{
+        console.log(input_city.value);
+        console.log(input_mobile.value);
+        
+        Valide(input_mobile);
+        Valide(input_city);
+        Valide(input_email);
+        Valide(input_name);
+    });
+
+    btn_reset.addEventListener("click",()=>{
+    
+        MiseAZero(input_name);
+        MiseAZero(input_city);
+        MiseAZero(input_email);
+        MiseAZero(input_mobile);
+
+    })
+
+</script>

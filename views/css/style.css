@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(25, 107, 240);
+  height: 800px;
+}
+.form {
+  width: 800px;
+  /* margin-top: 50px; */
+  background-color: white;
+  padding: 30px;
+  border: 2px;
+  border-style: solid;
+  border-color: black;
+}
